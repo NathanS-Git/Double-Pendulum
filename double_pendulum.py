@@ -1,6 +1,5 @@
 from pygame import *
 from math import *
-import random
 
 init()
 screen_width = 600
@@ -38,8 +37,6 @@ while True:
     
     a1v += a1a
     a2v += a2a
-    a1v *= 0.99 # Drag
-    a2v *= 0.99 # Drag
     a1 += a1v
     a2 += a2v
 
