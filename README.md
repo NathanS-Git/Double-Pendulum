@@ -1,6 +1,18 @@
-# Double pendulum
-This is a very rudimentary double pendulum simulation. I quite enjoy physics, so this was more so an interesting simple project I worked on. I had ambitions to make a triple pendulum simulation, however after finding the angular acceleration of a two pendulum simulation, I was not too keen on re-doing it with a three pendulum system. 
+# N-Pendulum
+This is an n-pendulum system solver that makes use of sympy, a symbolic mathematics library. We build up several Lagrangian equations based on the amount of lengths and masses provided for the pendulum, then make use of sympy to solve each Lagrangian as a python method for the acceleration of each angle. These equations allow us to visualize the pendulum system. Examples provided below. 
 
-## Example
-This is the simulation with drag enabled. 
-![Gif of basic double pendulum simulation](output.gif)
+This project was done to better understand Lagrangian methods. I intended to allow for more than a 3 pendulum system generated to be reasonable eventually by using automatic or numerical differentiation methods, as opposed to symbolic.
+
+## Examples
+
+Single pendulum.
+
+![Single pendulum system](docs/output1.gif)
+
+Double pendulum.
+
+![Double pendulum system](docs/output2.gif)
+
+Triple pendulum.
+
+![Triple pendulum system](docs/output3.gif)
